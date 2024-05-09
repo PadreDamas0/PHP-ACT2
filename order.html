@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canteen Order</title>
+</head>
+<body>
+  <h1>Welcome to the canteen! Here are the prices</h1>
+  <ul>
+    <li>fishball - 30 pesos</li>
+    <li>kikiam - 40 pesos</li>
+    <li>corndog - 50 pesos</li>
+  </ul>
+  <form action="total.php" method="POST">
+    <label for="order">Choose your order:</label>
+    <select name="order" id="order">
+      <option value="fishball">Fishball</option>
+      <option value="kikiam">Kikiam</option>
+      <option value="corndog">Corndog</option>
+    </select><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="text" name="quantity" id="quantity"><br><br>
+    <label for="cash">Cash:</label>
+    <input type="text" name="cash" id="cash"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
